@@ -1,17 +1,12 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
-//Faça um programa que leia o preço de um produto e a quantidade comprada, e exiba o valor total da compra.
-
-int main()
-{
-float preco, quantidade, total;
-printf("Insira o valor do produto:");
-scanf("%f", &preco);
-printf("Insira a quantidade de produtos comprada: ");
-scanf("%f", &quantidade);
-total=preco*quantidade;
-printf("O valor total de todos os produtos comprados é: %f", total);
-system("pause");
-return 0;
+#include <stdio.h>
+int main() {
+    int numero;
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    if (numero % 2 == 0 && numero > 0) {
+        printf("O número é par e positivo\n");
+    } else {
+        printf("O número não é par e positivo\n");
+    }
+    return 0;
 }

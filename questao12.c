@@ -1,15 +1,16 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-int main() 
-{
-int horastrabalhadas, valorhora, total;
-printf("Insira as horas trabalhadas: ");
-scanf("%d", &horastrabalhadas);
-printf("Insira o valor por hora: ");
-scanf("%d", &valorhora);
-total=horastrabalhadas*valorhora*20;
-printf("O valor ganho em dias de trabalho é: %d", total);
-system("pause");
-return 0;
-}
+#include<stdlib.h>
+#include<stdio.h>
+#include<math.h>
+int main (){
+   float cateto1, cateto2, hipotenusa;
+    
+    printf("Digite o valor do primeiro cateto: ");
+    scanf("%f", &cateto1);
+    
+    printf("Digite o valor do segundo cateto: ");
+    scanf("%f", &cateto2);
+    
+    hipotenusa = sqrt(cateto1 * cateto1 + cateto2 * cateto2);
+    
+    printf("A hipotenusa é %.2f\n", hipotenusa);
+} 

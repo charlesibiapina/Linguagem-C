@@ -1,12 +1,12 @@
-#include <stdio.h>
-#define PI 3.14159
-int main() {
-float raio, altura, volume;
-printf("Digite o valor do raio do cilindro: ");
-scanf("%f", &raio);
-printf("Digite o valor da altura do cilindro: ");
-scanf("%f", &altura);
-volume = PI * raio * raio * altura;
-printf("O volume do cilindro é: %.2f\n", volume);
-return 0;
+#include<stdlib.h>
+#include<stdio.h>
+int main (){
+   char vogal;
+   scanf("%c", &vogal);
+   if (vogal=='a' || vogal =='e' || vogal=='i' || vogal=='o' || vogal=='u') {
+    printf("A letra é uma vogal minuscula");
+   } else {
+    printf("A letra não é uma vogal minuscula");
+   }
 }
+

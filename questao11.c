@@ -1,13 +1,14 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-int main() 
-{
-double valor, desconto;
-printf("Insira o valor:");
-scanf("%lf", &valor);
-desconto=valor-10/100;
-printf("O valor com desconto é: %lf", desconto);
-system("pause");
-return 0;
+#include<stdlib.h>
+#include<stdio.h>
+#include<math.h>
+int main (){
+    int numero;
+    printf("Insira um numero inteiro:");
+    scanf("%d", &numero);
+
+    if (numero%5==0){
+        printf("É múltiplo de 5");
+    } else {
+        printf ("Não é múltiplo");
+    }
 }

@@ -1,15 +1,14 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
-int main()
-{
-float b, h, a;
-printf("Insira a base: ");
-scanf("%f", &b);
-printf("Insira a altura: ");
-scanf("%f", &h);
-a=b*h;
-printf("A area do retangulo é: %f", a);
-system("pause");
-return 0;
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+    
+    printf("Digite a temperatura em Celsius: ");
+    scanf("%f", &celsius);
+    
+    fahrenheit = (celsius * 9 / 5) + 32;
+    
+    printf("%.2f graus Celsius correspondem a %.2f graus Fahrenheit\n", celsius, fahrenheit);
+    
+    return 0;
 }

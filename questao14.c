@@ -1,15 +1,16 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
-int main()
-{
-int num, ant, suc;
-printf("Insira um numero: ");
-scanf("%d", &num);
-ant=num-1;
-printf("Seu antecessor é: %d", ant);
-suc=num+1;
-printf("Seu sucessor é: %d", suc);
-system("pause");
-return 0;
+#include <stdio.h>
+
+int main() {
+    int ano;
+    
+    printf("Digite um ano: ");
+    scanf("%d", &ano);
+    
+    if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
+        printf("O ano é bissexto\n");
+    } else {
+        printf("O ano não é bissexto\n");
+    }
+    
+    return 0;
 }
