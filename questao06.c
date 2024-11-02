@@ -1,10 +1,38 @@
 #include<stdlib.h>
 #include<stdio.h>
-#include<math.h>
 int main (){
-   int num1, num2, num3, media;
-   printf("Digite os numeros:");
-   scanf("%d, %d, %d", &num1, &num2, &num3);
-   media=num1=num2=num3/3;
-   printf("A media entre os numeros:", media);
-   }
+    int planeta;
+    printf("Insira um número de 1 a 8");
+    scanf("%d", &planeta);
+    
+    switch (planeta)
+    {
+        case 1: 
+            printf("Mercúrio");
+            break;
+        case 2:
+            printf("Vênus");
+            break;
+        case 3:
+            printf("Terra");
+            break;
+        case 4:
+            printf("Marte");
+            break;
+        case 5:
+            printf("Júpiter");
+            break;
+        case 6:
+            printf("Saturno");
+            break;
+        case 7:
+            printf("Urano");
+            break;
+        case 8:
+            printf("Netuno");
+            break;
+        default:
+            printf("Valor digitado invalido");
+            break;
+    }
+}
